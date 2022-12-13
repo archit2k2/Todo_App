@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="/views/home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+
+  <body>
+    <div class="title">
+      <div class="heading">TODO APP</div>
+    </div>
+
+
+    <form action="/create-task" method="post" >
+      <input type="text" placeholder="Title" name="title" required />
+      <input type="text" placeholder="Description" name="desc" required />
+      <button type="submit">Add Task</button>
+    </form>
+
+
+
+    <div class="window">
+      <div class="tasks">
+        <%for(let i of task_list){%>
+        <div class="task">
+          <div class="title-bar">
+            <p class="title-name"><%=i.title%></p>
+            <div>
+              <a href="/complete-task/?id=<%=i._id%>"><i class="fa-solid fa-check" style="font-size: 26px; color: black; padding: 0.5vw;"></i></a>
+            <a href="/del-task/?id=<%=i._id%>"><i class="fa-solid fa-trash" style="font-size:26px; color: black;"></i></a>
+            </div>
+          </div>
+          <div class="desc"><%=i.description%></div>
+        </div>
+        <%}%>
+      </div>
+    </div>
+  </body>
+</html>

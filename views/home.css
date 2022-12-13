@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  margin: 0;
+}
+.title {
+  height: 7%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  align-items: center;
+  padding: 1em;
+  background-color: aliceblue;
+  box-shadow: 0 1px 10px;
+}
+.window {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+.heading {
+  font-weight: bold;
+  font-size: 2.7rem;
+  margin-left: 2rem;
+}
+
+form
+{
+  width: 35%;
+  margin: 3vh 34%;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input
+{
+  padding: 0 1vw;
+  height: 7vh;
+  width: 25vw;
+  outline: none;
+  border-radius: 5px;
+  margin: 2vh 0;
+  border: 1.4px solid black;
+}
+
+.tasks {
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.task {
+  border: 2px solid black;
+  height: 35%;
+  width: 25%;
+  word-wrap: break-word;
+  border-radius: 20px;
+  margin-top: 5vh;
+  margin-left: 3vw;
+}
+
+button
+{
+  border-radius: 5px;
+  background-color: #0275d8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 3.5vh;
+  padding: 1.3vh 1.3vw;
+}
+
+.desc{
+  padding: 2vh 1vw;
+  width: 91%;
+}
+
+.title-bar{
+  background-color: #0275d8;
+  border-radius: 18px;
+  padding:0 1vw;
+  color: white;
+  display: flex;
+  margin: 1vh 0.8vw;
+  justify-content:space-between ;
+  align-items: center;
+}
+.title-name{
+  margin-left: 1.5vw;
+}
